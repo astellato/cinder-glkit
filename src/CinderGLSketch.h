@@ -5,8 +5,9 @@
 #include "cinder/Timer.h"
 #include "cinder/Timeline.h"
 #include "cinder/app/TouchEvent.h"
-
+#include "cinder/gl/gl.h"
 #include <ostream>
+#include "cinder/app/AppNative.h"
 
 namespace cinder {
 
@@ -26,7 +27,7 @@ public:
     , mTimeline(Timeline::create())
     , mFrameCount(0)
     {};
-    
+    ci::app::WindowRef window;
     virtual ~CinderGLSketch(){};
 
     void privateSetup__();
@@ -43,6 +44,8 @@ public:
     void         setSize(const Vec2i &size){ mSize = size; }
     Area         getBounds() const { return Area(0, 0, mSize.x, mSize.y); }
     float        getAspectRatio() const { return (float)mSize.x / (float)mSize.y; }
+    int          getWindowWidth() const { return mSize.x; }
+    int          getWindowHeight() const { return mSize.y; }
     
     double getElapsedSeconds() const { return mTimer.getSeconds(); }
     uint32_t getElapsedFrames() const { return mFrameCount; }

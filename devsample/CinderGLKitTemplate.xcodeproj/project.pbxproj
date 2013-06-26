@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C77C535177A03C900E8E2BD /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C77C534177A03C900E8E2BD /* ImageIO.framework */; };
+		3C77C537177A040400E8E2BD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C77C536177A040400E8E2BD /* MobileCoreServices.framework */; };
+		3C77C557177A51F200E8E2BD /* color.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3C77C556177A51F200E8E2BD /* color.fsh */; };
+		3C77C559177A51F600E8E2BD /* color.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3C77C558177A51F600E8E2BD /* color.vsh */; };
+		3C77C55B177A51F900E8E2BD /* loadingbox.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3C77C55A177A51F900E8E2BD /* loadingbox.fsh */; };
+		3C77C55D177A51FC00E8E2BD /* loadingbox.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3C77C55C177A51FC00E8E2BD /* loadingbox.vsh */; };
+		3CF1217E1779F8B3007FB7FC /* CinderGLSketch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CF121791779F8B3007FB7FC /* CinderGLSketch.mm */; };
+		3CF1217F1779F8B3007FB7FC /* CinderGLViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1217B1779F8B3007FB7FC /* CinderGLViewController.mm */; };
+		3CF121801779F8B3007FB7FC /* Vbo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CF1217C1779F8B3007FB7FC /* Vbo.cpp */; };
+		94147EDC14773F2200769513 /* CinderGLKitTemplateSketch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94147EDB14773F2200769513 /* CinderGLKitTemplateSketch.mm */; };
+		9442F870145F2A3B00C76F9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442F86F145F2A3B00C76F9E /* UIKit.framework */; };
+		9442F872145F2A3B00C76F9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442F871145F2A3B00C76F9E /* Foundation.framework */; };
+		9442F874145F2A3B00C76F9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442F873145F2A3B00C76F9E /* CoreGraphics.framework */; };
+		9442F876145F2A3B00C76F9E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442F875145F2A3B00C76F9E /* GLKit.framework */; };
+		9442F878145F2A3B00C76F9E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9442F877145F2A3B00C76F9E /* OpenGLES.framework */; };
+		9442F8A6145F2BE100C76F9E /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9442F8A1145F2BE100C76F9E /* AppDelegate.mm */; };
+		9442F8A7145F2BE100C76F9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9442F8A2145F2BE100C76F9E /* main.m */; };
+		944F2CFD1460D21900BAB970 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944F2CFB1460D21900BAB970 /* AudioToolbox.framework */; };
+		944F2CFE1460D21900BAB970 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944F2CFC1460D21900BAB970 /* AVFoundation.framework */; };
+		944F2D001460D24900BAB970 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944F2CFF1460D24900BAB970 /* CoreText.framework */; };
+		944F2D041460D2A700BAB970 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944F2D031460D2A700BAB970 /* QuartzCore.framework */; };
+		9464C4BE145F2F6300E019B6 /* CinderGLView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9464C4BD145F2F6300E019B6 /* CinderGLView.xib */; };
+		E2E774031473184D00FD113C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E774021473184D00FD113C /* CoreVideo.framework */; };
+		E2E774051473187900FD113C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E774041473187900FD113C /* CoreMedia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C77C534177A03C900E8E2BD /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		3C77C536177A040400E8E2BD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3C77C550177A3FD300E8E2BD /* GLSLRenderShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLSLRenderShaders.h; path = ../PostProduction/GLSLRenderShaders.h; sourceTree = "<group>"; };
+		3C77C551177A3FD300E8E2BD /* PostProduction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostProduction.h; sourceTree = "<group>"; };
+		3C77C552177A3FD300E8E2BD /* PostProductionShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostProductionShaders.h; sourceTree = "<group>"; };
+		3C77C554177A3FD300E8E2BD /* GLSLRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLSLRender.h; sourceTree = "<group>"; };
+		3C77C555177A403900E8E2BD /* FBOPingPong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBOPingPong.h; sourceTree = "<group>"; };
+		3C77C556177A51F200E8E2BD /* color.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = color.fsh; path = ../assets/color.fsh; sourceTree = "<group>"; };
+		3C77C558177A51F600E8E2BD /* color.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = color.vsh; path = ../assets/color.vsh; sourceTree = "<group>"; };
+		3C77C55A177A51F900E8E2BD /* loadingbox.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = loadingbox.fsh; path = ../assets/loadingbox.fsh; sourceTree = "<group>"; };
+		3C77C55C177A51FC00E8E2BD /* loadingbox.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = loadingbox.vsh; path = ../assets/loadingbox.vsh; sourceTree = "<group>"; };
+		3CF121781779F8B3007FB7FC /* CinderGLSketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderGLSketch.h; sourceTree = "<group>"; };
+		3CF121791779F8B3007FB7FC /* CinderGLSketch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CinderGLSketch.mm; sourceTree = "<group>"; };
+		3CF1217A1779F8B3007FB7FC /* CinderGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinderGLViewController.h; sourceTree = "<group>"; };
+		3CF1217B1779F8B3007FB7FC /* CinderGLViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CinderGLViewController.mm; sourceTree = "<group>"; };
+		3CF1217C1779F8B3007FB7FC /* Vbo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vbo.cpp; sourceTree = "<group>"; };
+		3CF1217D1779F8B3007FB7FC /* Vbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vbo.h; sourceTree = "<group>"; };
+		94147EDB14773F2200769513 /* CinderGLKitTemplateSketch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CinderGLKitTemplateSketch.mm; path = src/CinderGLKitTemplateSketch.mm; sourceTree = SOURCE_ROOT; };
+		94147EDD14773F3700769513 /* CinderGLKitTemplateSketch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CinderGLKitTemplateSketch.h; path = ../include/CinderGLKitTemplateSketch.h; sourceTree = "<group>"; };
+		9442F86B145F2A3B00C76F9E /* CinderGLKitTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinderGLKitTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9442F86F145F2A3B00C76F9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9442F871145F2A3B00C76F9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9442F873145F2A3B00C76F9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9442F875145F2A3B00C76F9E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		9442F877145F2A3B00C76F9E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		9442F87B145F2A3B00C76F9E /* CinderGLKitTemplate-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CinderGLKitTemplate-Info.plist"; sourceTree = "<group>"; };
+		9442F881145F2A3B00C76F9E /* CinderGLKitTemplate-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CinderGLKitTemplate-Prefix.pch"; sourceTree = "<group>"; };
+		9442F89B145F2BE100C76F9E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9442F8A1145F2BE100C76F9E /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		9442F8A2145F2BE100C76F9E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		944F2CFB1460D21900BAB970 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		944F2CFC1460D21900BAB970 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		944F2CFF1460D24900BAB970 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		944F2D031460D2A700BAB970 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9464C4BD145F2F6300E019B6 /* CinderGLView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CinderGLView.xib; sourceTree = SOURCE_ROOT; };
+		E2E774021473184D00FD113C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E2E774041473187900FD113C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9442F868145F2A3B00C76F9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C77C537177A040400E8E2BD /* MobileCoreServices.framework in Frameworks */,
+				3C77C535177A03C900E8E2BD /* ImageIO.framework in Frameworks */,
+				E2E774051473187900FD113C /* CoreMedia.framework in Frameworks */,
+				E2E774031473184D00FD113C /* CoreVideo.framework in Frameworks */,
+				944F2D041460D2A700BAB970 /* QuartzCore.framework in Frameworks */,
+				944F2D001460D24900BAB970 /* CoreText.framework in Frameworks */,
+				944F2CFD1460D21900BAB970 /* AudioToolbox.framework in Frameworks */,
+				944F2CFE1460D21900BAB970 /* AVFoundation.framework in Frameworks */,
+				9442F870145F2A3B00C76F9E /* UIKit.framework in Frameworks */,
+				9442F872145F2A3B00C76F9E /* Foundation.framework in Frameworks */,
+				9442F874145F2A3B00C76F9E /* CoreGraphics.framework in Frameworks */,
+				9442F876145F2A3B00C76F9E /* GLKit.framework in Frameworks */,
+				9442F878145F2A3B00C76F9E /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C77C541177A24B500E8E2BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C77C55C177A51FC00E8E2BD /* loadingbox.vsh */,
+				3C77C55A177A51F900E8E2BD /* loadingbox.fsh */,
+				3C77C558177A51F600E8E2BD /* color.vsh */,
+				3C77C556177A51F200E8E2BD /* color.fsh */,
+			);
+			name = Resources;
+			path = resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		3C77C54F177A3FD300E8E2BD /* PostProduction */ = {
+			isa = PBXGroup;
+			children = (
+				3C77C551177A3FD300E8E2BD /* PostProduction.h */,
+				3C77C552177A3FD300E8E2BD /* PostProductionShaders.h */,
+			);
+			path = PostProduction;
+			sourceTree = "<group>";
+		};
+		3C77C553177A3FD300E8E2BD /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				3C77C554177A3FD300E8E2BD /* GLSLRender.h */,
+				3C77C550177A3FD300E8E2BD /* GLSLRenderShaders.h */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		3CF1214F1779F81A007FB7FC /* blocks */ = {
+			isa = PBXGroup;
+			children = (
+				3CF121501779F82C007FB7FC /* cinder-glkit */,
+			);
+			name = blocks;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CF121501779F82C007FB7FC /* cinder-glkit */ = {
+			isa = PBXGroup;
+			children = (
+				3CF121771779F8B3007FB7FC /* src */,
+			);
+			name = "cinder-glkit";
+			path = ../..;
+			sourceTree = SOURCE_ROOT;
+		};
+		3CF121771779F8B3007FB7FC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3CF121781779F8B3007FB7FC /* CinderGLSketch.h */,
+				3CF121791779F8B3007FB7FC /* CinderGLSketch.mm */,
+				3CF1217A1779F8B3007FB7FC /* CinderGLViewController.h */,
+				3CF1217B1779F8B3007FB7FC /* CinderGLViewController.mm */,
+				3CF1217C1779F8B3007FB7FC /* Vbo.cpp */,
+				3CF1217D1779F8B3007FB7FC /* Vbo.h */,
+			);
+			name = src;
+			path = "cinder-glkit/src";
+			sourceTree = "<group>";
+		};
+		9442F860145F2A3B00C76F9E = {
+			isa = PBXGroup;
+			children = (
+				9442F879145F2A3B00C76F9E /* CinderGLKitTemplate */,
+				9442F86E145F2A3B00C76F9E /* Frameworks */,
+				9442F86C145F2A3B00C76F9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9442F86C145F2A3B00C76F9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9442F86B145F2A3B00C76F9E /* CinderGLKitTemplate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9442F86E145F2A3B00C76F9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C77C536177A040400E8E2BD /* MobileCoreServices.framework */,
+				3C77C534177A03C900E8E2BD /* ImageIO.framework */,
+				E2E774041473187900FD113C /* CoreMedia.framework */,
+				E2E774021473184D00FD113C /* CoreVideo.framework */,
+				944F2D031460D2A700BAB970 /* QuartzCore.framework */,
+				944F2CFF1460D24900BAB970 /* CoreText.framework */,
+				944F2CFB1460D21900BAB970 /* AudioToolbox.framework */,
+				944F2CFC1460D21900BAB970 /* AVFoundation.framework */,
+				9442F86F145F2A3B00C76F9E /* UIKit.framework */,
+				9442F871145F2A3B00C76F9E /* Foundation.framework */,
+				9442F873145F2A3B00C76F9E /* CoreGraphics.framework */,
+				9442F875145F2A3B00C76F9E /* GLKit.framework */,
+				9442F877145F2A3B00C76F9E /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9442F879145F2A3B00C76F9E /* CinderGLKitTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				3C77C541177A24B500E8E2BD /* Resources */,
+				3CF1214F1779F81A007FB7FC /* blocks */,
+				9442F89A145F2BE100C76F9E /* include */,
+				9442F8A0145F2BE100C76F9E /* src */,
+				9442F87B145F2A3B00C76F9E /* CinderGLKitTemplate-Info.plist */,
+				9442F881145F2A3B00C76F9E /* CinderGLKitTemplate-Prefix.pch */,
+				9464C4BD145F2F6300E019B6 /* CinderGLView.xib */,
+			);
+			path = CinderGLKitTemplate;
+			sourceTree = SOURCE_ROOT;
+		};
+		9442F89A145F2BE100C76F9E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				3C77C555177A403900E8E2BD /* FBOPingPong.h */,
+				9442F89B145F2BE100C76F9E /* AppDelegate.h */,
+			);
+			path = include;
+			sourceTree = SOURCE_ROOT;
+		};
+		9442F8A0145F2BE100C76F9E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				3C77C54F177A3FD300E8E2BD /* PostProduction */,
+				3C77C553177A3FD300E8E2BD /* Render */,
+				9442F8A2145F2BE100C76F9E /* main.m */,
+				9442F8A1145F2BE100C76F9E /* AppDelegate.mm */,
+				94147EDD14773F3700769513 /* CinderGLKitTemplateSketch.h */,
+				94147EDB14773F2200769513 /* CinderGLKitTemplateSketch.mm */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9442F86A145F2A3B00C76F9E /* CinderGLKitTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9442F891145F2A3B00C76F9E /* Build configuration list for PBXNativeTarget "CinderGLKitTemplate" */;
+			buildPhases = (
+				9442F867145F2A3B00C76F9E /* Sources */,
+				9442F868145F2A3B00C76F9E /* Frameworks */,
+				9442F869145F2A3B00C76F9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CinderGLKitTemplate;
+			productName = CinderGLKitTemplate;
+			productReference = 9442F86B145F2A3B00C76F9E /* CinderGLKitTemplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9442F862145F2A3B00C76F9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9442F865145F2A3B00C76F9E /* Build configuration list for PBXProject "CinderGLKitTemplate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9442F860145F2A3B00C76F9E;
+			productRefGroup = 9442F86C145F2A3B00C76F9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9442F86A145F2A3B00C76F9E /* CinderGLKitTemplate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9442F869145F2A3B00C76F9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9464C4BE145F2F6300E019B6 /* CinderGLView.xib in Resources */,
+				3C77C557177A51F200E8E2BD /* color.fsh in Resources */,
+				3C77C55D177A51FC00E8E2BD /* loadingbox.vsh in Resources */,
+				3C77C55B177A51F900E8E2BD /* loadingbox.fsh in Resources */,
+				3C77C559177A51F600E8E2BD /* color.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9442F867145F2A3B00C76F9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9442F8A6145F2BE100C76F9E /* AppDelegate.mm in Sources */,
+				9442F8A7145F2BE100C76F9E /* main.m in Sources */,
+				94147EDC14773F2200769513 /* CinderGLKitTemplateSketch.mm in Sources */,
+				3CF1217E1779F8B3007FB7FC /* CinderGLSketch.mm in Sources */,
+				3CF1217F1779F8B3007FB7FC /* CinderGLViewController.mm in Sources */,
+				3CF121801779F8B3007FB7FC /* Vbo.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9442F88F145F2A3B00C76F9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CINDER_PATH = "$(CINDER_PATH_$(USER))";
+				CINDER_PATH_ryan = "../../../code/frameworks/cinder-es2-timeline";
+				CINDER_PATH_tom = /Users/tom/Documents/Code/Cinder/CinderES2;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" include";
+			};
+			name = Debug;
+		};
+		9442F890145F2A3B00C76F9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CINDER_PATH = "$(CINDER_PATH_$(USER))";
+				CINDER_PATH_ryan = "../../../code/frameworks/cinder-es2-timeline";
+				CINDER_PATH_tom = /Users/tom/Documents/Code/Cinder/CinderES2;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/boost\"";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" include";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9442F892145F2A3B00C76F9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CINDER_PATH = ../../..;
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CinderGLKitTemplate-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/boost\"",
+					"\"$(CINDER_PATH)/blocks/cinder-glkit/src\"",
+				);
+				INFOPLIST_FILE = "CinderGLKitTemplate-Info.plist";
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
+					"\"$(CINDER_PATH)/lib/libcinder-iphone_d.a\"",
+					"-lz",
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=*]" = (
+					"\"$(CINDER_PATH)/lib/libcinder-iphone-sim_d.a\"",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9442F893145F2A3B00C76F9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CINDER_PATH = ../../..;
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CinderGLKitTemplate-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(CINDER_PATH)/boost\"",
+					"\"$(CINDER_PATH)/blocks/cinder-glkit/src\"",
+				);
+				INFOPLIST_FILE = "CinderGLKitTemplate-Info.plist";
+				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[sdk=iphoneos*][arch=*]" = (
+					"\"$(CINDER_PATH)/lib/libcinder-iphone.a\"",
+					"-lz",
+				);
+				"OTHER_LDFLAGS[sdk=iphonesimulator*][arch=*]" = (
+					"\"$(CINDER_PATH)/lib/libcinder-iphone-sim.a\"",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9442F865145F2A3B00C76F9E /* Build configuration list for PBXProject "CinderGLKitTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442F88F145F2A3B00C76F9E /* Debug */,
+				9442F890145F2A3B00C76F9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9442F891145F2A3B00C76F9E /* Build configuration list for PBXNativeTarget "CinderGLKitTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9442F892145F2A3B00C76F9E /* Debug */,
+				9442F893145F2A3B00C76F9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9442F862145F2A3B00C76F9E /* Project object */;
+}
